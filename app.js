@@ -23,5 +23,33 @@ function alphabetical(toAlpha) {
     return result
 
 }
-
 console.log(alphabetical("Orange"))
+
+//Q4. Write a JavaScript program that accepts a number as input and inserts dashes (-) between each even number
+// Q4
+let l= 91247786 ;
+let numdash = l.toString();
+let result ="";
+let k = "0";
+function eveen(){
+for (let i = 0; i < numdash.length; i++) {
+    if(i < numdash.length - 1 && parseInt(numdash[i]) % 2 === 0 && parseInt(numdash[i + 1]) % 2 === 0 )
+        {
+            k= "-";
+        } 
+    else{
+        k="";
+    }
+    result += numdash[i] + k
+}
+return console.log(result);
+}
+
+eveen();
+
+// Q5
+function age(z){
+    let x = z >=18 ? 'The user is Adult': 'The user is Minor';
+    return console.log(x);
+}
+age(24);
